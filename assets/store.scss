@@ -1,0 +1,437 @@
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.topNav {
+    font-size: 16px;
+    transition: 0.8s ease-in-out;
+    padding: 25px 15px 20px 15px;
+    margin-bottom: 0;
+    text-align: center;
+    border-bottom: 1.5px solid gray;
+    background-color: black;
+    text-decoration: none;
+}
+
+.buttonNav {
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+    padding-bottom: 18px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        color:  #4285F4;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        text-decoration: none;
+    }
+}
+
+.buttonRight {
+    margin-left: 8%;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 18px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        color:  #4285F4;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        text-decoration: none;
+    }
+}
+.buttonHome {
+    text-decoration: none;
+    color: white;
+    margin-left: 3%;
+    padding-bottom: 18px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        color:  #4285F4;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        text-decoration: none;
+    }
+}
+
+.setElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.buttonCarrou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.photoGroup {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #c0bfbf;
+    }
+}
+.photoGroupClick {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    color: white;
+    background-color: #6d6d6d;
+}
+.introGroup {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #c0bfbf;
+    }
+}
+.introGroupClick {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    color: white;
+    background-color: #6d6d6d;
+}
+.showreelGroup {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #c0bfbf;
+    }
+}
+.showreelGroupClick {
+    display: flex;
+    margin-right: 2%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    height: 35px;
+    color: white;
+    background-color: #6d6d6d;
+}
+
+
+.carrouselClass {
+    width: 650px;
+    height: 650px;
+}
+
+.infoProduct {
+    margin-top: 3%;
+    display: flex;
+    align-items: baseline;
+    .priceBigInfo {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .subInfo {
+        margin-left: -20px;
+        color: gray;
+        font-size: 15px;
+        // list-style-type: none;
+    }
+    .dontMiss {
+        // margin-top: 12%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.shippingGroup {
+    display: flex;
+    margin-top: 25%;
+}
+.coinsGroup {
+    display: flex;
+}
+.echangeGroup {
+    display: flex;
+}
+
+
+.checkBox {
+    margin-left: 5%;
+    .infoText {
+        font-size: 15px;
+        color: gray;
+    }
+    .infoDetails {
+        font-size: 15px;
+    }
+    .imgCheckbox {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.checkTitle {
+    color: rgb(59, 59, 59);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sdCard {
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    .sdCardInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    &:hover {
+        border: 1.5px solid #4285F4;
+    }
+}
+
+.checkedSD {
+    border: 2.5px solid #4285F4;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    .sdCardInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+}
+
+.controller {
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .controllerInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    &:hover {
+        border: 1.5px solid #4285F4;
+    }
+}
+
+.checkedControl {
+    border: 2.5px solid #4285F4;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .controllerInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+}
+
+.moreKit {
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .moreKitInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    &:hover {
+        border: 1.5px solid #4285F4;
+    }
+}
+
+.checkedMoreKit {
+    border: 2.5px solid #4285F4;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .moreKitInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+}
+
+.battery {
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .batteryInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    &:hover {
+        border: 1.5px solid #4285F4;
+    }
+}
+
+.chechedBattery {
+    border: 2.5px solid #4285F4;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    margin-top: 2%;
+    transition: 0.5s ease-in-out;
+    .batteryInfo {
+        margin-left: 3%;
+        margin-top: 0;
+    }
+}
+
+.boxTitle {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.boxTextContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 10%;
+    .textBox {
+        margin-right: 3%;
+        padding: 12px;
+        border: 1.5px solid rgb(196, 196, 196);
+        transition: 0.5s ease-in-out;
+        &:hover {
+            transform: translateY(-8px);
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.moreInfoTitle {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.divpanel1 {
+    display: flex;
+    justify-content: center;
+    height: 445px;
+    .biggerText {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .panel1TextLeft {
+        background-image: url(img/storePage/panel1left.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: white;
+        padding: 30px;
+    }
+    .panel1TextRight {
+        background-image: url(img/storePage/panel1right.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 30px;
+    }
+}
+.divpanel2 {
+    display: flex;
+    justify-content: center;
+    height: 415px;
+    .panel2 {
+        background-image: url(img/storePage/panelend.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: white;
+        padding: 30px;
+        }
+}
+.divpanelEnd {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    height: 330px;
+    .biggerText {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .panelEndTextLeft {
+        background-image: url(img/storePage/panel2left.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 30px;
+    }
+    .panelEndTextRight {
+        background-image: url(img/storePage/panel2right.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: white;
+        padding: 30px;
+    }
+}
+
+
+
+
+
+.botNavBar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0px;
+    width: 100%;
+    box-shadow:0px 1px 12px #00000080;
+    background-color: white;
+    padding: 10px 0px;
+    height: 70px;
+    .infoNav {
+        margin-left: 20%;
+    }
+    .priceAll {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .botNavText {
+        font-size: 15px;
+        margin-top: 0;
+    }
+}
+
+.botNavButton {
+    margin-right: 20%;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: #4285F4;
+    padding: 0 70px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #71a0eb;
+    }
+}

@@ -1,0 +1,549 @@
+body {
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.topNav {
+  font-size: 18px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  padding: 25px 15px 20px 15px;
+  margin-bottom: 0;
+}
+
+.topNav:hover {
+  background-color: white;
+}
+
+.topNav:hover .buttonNav {
+  color: black;
+}
+
+.topNav:hover .buttonRight {
+  color: black;
+}
+
+.topNav:hover .buttonHome {
+  color: black;
+}
+
+.buttonNav {
+  color: white;
+  text-decoration: none;
+  margin-left: 3%;
+  padding-bottom: 18px;
+}
+
+.buttonNav:hover {
+  border-bottom: 2px solid black;
+}
+
+.buttonRight {
+  float: right;
+  margin-right: 3%;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 18px;
+}
+
+.buttonRight:hover {
+  border-bottom: 2px solid black;
+}
+
+.buttonHome {
+  text-decoration: none;
+  color: white;
+  margin-left: 3%;
+  padding-bottom: 18px;
+}
+
+.buttonHome:hover {
+  border-bottom: 2px solid black;
+}
+
+.bigPaper {
+  text-align: center;
+  color: white;
+  background-image: url(img/homePage/djibackground.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1250px;
+  width: auto;
+  background-color: black;
+}
+
+.bigPaper .paperTitle {
+  margin-top: 0;
+  padding-top: 23%;
+  font-size: 75px;
+  margin-bottom: 0;
+}
+
+.bigPaper .paperSubTitle {
+  margin-top: 0;
+  font-size: 35px;
+  margin-bottom: 10%;
+}
+
+.bigPaper .paperAppear {
+  font-size: 55px;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+
+.elementDrone {
+  background: #414141;
+  background: -webkit-gradient(linear, left bottom, left top, from(#414141), to(black));
+  background: linear-gradient(0deg, #414141 0%, black 100%);
+  height: 2000px;
+  color: white;
+  font-size: 40px;
+}
+
+.elementDrone .elemFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+}
+
+.elementDrone .droneText {
+  margin-right: 5%;
+  margin-left: 5%;
+  text-shadow: 2px 2px 0px #414141;
+  font-weight: 900;
+}
+
+.elementDrone .imgElem {
+  width: 35%;
+}
+
+.droneContainer {
+  color: white;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.droneContainer .containerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+}
+
+.droneContainer .droneTextClass {
+  margin-top: 5%;
+  margin-right: 10%;
+  font-size: 35px;
+  width: 535px;
+}
+
+.droneContainer .colorTextDrone {
+  color: #f03e3e;
+  font-weight: 900;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.droneContainer .imgContainer {
+  width: 850px;
+  height: 500px;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 12.3px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #f03e3e;
+  border: 0.2px solid #010101;
+  border-radius: 50px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -6.5px;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #f03e3e;
+}
+
+input[type=range]::-moz-range-track {
+  background: #f03e3e;
+  border: 0.2px solid #010101;
+  border-radius: 50px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 13.3px 0;
+  color: transparent;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #f03e3e;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #f03e3e;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+
+input[type=range]::-ms-thumb {
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #f03e3e;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #f03e3e;
+}
+
+.slideContainer {
+  margin-bottom: 15%;
+  opacity: 0.5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.slideContainer:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+.specGlobal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 800px;
+  font-size: 20px;
+}
+
+.specGlobal .spec {
+  color: white;
+}
+
+.specGlobal .videoUnreal {
+  color: white;
+  text-align: center;
+}
+
+.specGlobal2 {
+  margin-bottom: 10%;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.class4k60fps {
+  color: #f03e3e;
+  margin-bottom: 0;
+  font-size: 70px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.class4k60fps:hover {
+  text-shadow: 2px 2px 0px white;
+}
+
+.mbps {
+  color: #f03e3e;
+  margin-bottom: 0;
+  font-size: 70px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.mbps:hover {
+  text-shadow: 2px 2px 0px white;
+}
+
+.airFlow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  height: 1300px;
+}
+
+.airFlow .titleAir {
+  font-size: 60px;
+}
+
+.airFlow .subTitleAir {
+  font-size: 25px;
+}
+
+.airFlow .airFlowVideo {
+  margin-top: 5%;
+}
+
+.airFlow .colorText {
+  color: #f03e3e;
+  font-weight: 700;
+}
+
+.otherSpec {
+  background-image: url(img/homePage/dji_fpv_drone_15.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: auto;
+  color: white;
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.otherSpec .specOne {
+  margin-top: 5%;
+  width: 285px;
+  font-size: 20px;
+}
+
+.otherSpec .specTwo {
+  margin-top: 5%;
+  width: 285px;
+  font-size: 20px;
+  margin-left: 8%;
+}
+
+.otherSpec .specThree {
+  margin-top: 5%;
+  width: 285px;
+  font-size: 20px;
+  margin-left: 8%;
+}
+
+.subText {
+  color: #f03e3e;
+  font-size: 50px;
+  font-weight: 700;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.subText:hover {
+  text-shadow: 2px 2px 0px white;
+}
+
+.fakeJiBuy {
+  margin-top: 10%;
+  height: 1300px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #414141;
+  background: -webkit-gradient(linear, left bottom, left top, from(#414141), to(black));
+  background: linear-gradient(0deg, #414141 0%, black 100%);
+}
+
+.fakeJiBuy .imgBuy {
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.fakeJiBuy .boxInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 700px;
+}
+
+.fakeJiBuy .buyTitle {
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.fakeJiBuy .buSubTitle {
+  font-size: 25px;
+  margin-top: 2%;
+}
+
+.fakeJiBuy .buyPrice {
+  font-size: 25px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+
+.fakeJiBuy .legalInfo {
+  font-size: 12px;
+}
+
+.buyLink {
+  padding: 15px;
+  border: 12px;
+  font-size: 18px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.buyLink:hover {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 2px 2px 2px white;
+          box-shadow: 2px 2px 2px white;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.boxText {
+  border: 1.5px solid gray;
+  padding: 10px;
+  margin: 5px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.boxText:hover {
+  color: black;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  height: 400px;
+}
+
+.footerNav .colone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.footerNav .colTextTitle {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.colText {
+  text-decoration: none;
+  color: #adacac;
+  font-size: 17px;
+  margin-top: 8%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.colText:hover {
+  color: #f03e3e;
+  font-size: 18px;
+}
+/*# sourceMappingURL=index.css.map */
