@@ -2,4 +2,4 @@
 
 ## Voir le project
 
-- <a href="https://mathisvkg.github.io/FakeJi/" target="_blank">FakeJi Web Site</a>
+- <a href="https://mathisvkg.github.io/FakeJi-Web-Site/" target="_blank">FakeJi Web Site</a>
