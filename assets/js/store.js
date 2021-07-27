@@ -77,6 +77,64 @@ document.getElementById("showreelCheck").addEventListener("click", () => {
     document.getElementById("showreelCheck").setAttribute("class", "showreelGroupClick");
 })
 
+let checkQuestion = 0;
+document.getElementById("question1").addEventListener("click", () => {
+    checkQuestion++;
+    document.getElementById("arrowQuestion1").setAttribute("style", "transform: rotate(180deg);");
+    document.getElementById("subQuestion1").style.display = "block";
+    if(checkQuestion === 2) {
+        document.getElementById("arrowQuestion1").setAttribute("style", "transform: rotate(0deg);");
+        document.getElementById("subQuestion1").style.display = "none";
+        checkQuestion = 0;
+    }
+})
+let checkQuestion2 = 0;
+document.getElementById("question2").addEventListener("click", () => {
+    checkQuestion2++;
+    document.getElementById("subQuestion2").style.display = "block";
+    document.getElementById("arrowQuestion2").setAttribute("style", "transform: rotate(180deg);");
+    if(checkQuestion2 === 2) {
+        document.getElementById("arrowQuestion2").setAttribute("style", "transform: rotate(0deg);");
+        document.getElementById("subQuestion2").style.display = "none";
+        checkQuestion2 = 0;
+    }
+})
+let checkQuestion3 = 0;
+document.getElementById("question3").addEventListener("click", () => {
+    checkQuestion3++;
+    document.getElementById("subQuestion3").style.display = "block";
+    document.getElementById("arrowQuestion3").setAttribute("style", "transform: rotate(180deg);");
+    if(checkQuestion3 === 2) {
+        document.getElementById("arrowQuestion3").setAttribute("style", "transform: rotate(0deg);");
+        document.getElementById("subQuestion3").style.display = "none";
+        checkQuestion3 = 0;
+    }
+})
+let checkQuestion4 = 0;
+document.getElementById("question4").addEventListener("click", () => {
+    checkQuestion4++;
+    document.getElementById("subQuestion4").style.display = "block";
+    document.getElementById("arrowQuestion4").setAttribute("style", "transform: rotate(180deg);");
+    if(checkQuestion4 === 2) {
+        document.getElementById("arrowQuestion4").setAttribute("style", "transform: rotate(0deg);");
+        document.getElementById("subQuestion4").style.display = "none";
+        checkQuestion4 = 0;
+    }
+})
+let checkQuestion5 = 0;
+document.getElementById("question5").addEventListener("click", () => {
+    checkQuestion5++;
+    document.getElementById("subQuestion5").style.display = "block";
+    document.getElementById("arrowQuestion5").setAttribute("style", "transform: rotate(180deg);");
+    if(checkQuestion5 === 2) {
+        document.getElementById("arrowQuestion5").setAttribute("style", "transform: rotate(0deg);");
+        document.getElementById("subQuestion5").style.display = "none";
+        checkQuestion5 = 0;
+    }
+})
+
+
+
 function pauseVid1() {
   introvid.pause();
 }
