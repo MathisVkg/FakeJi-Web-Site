@@ -456,7 +456,7 @@ body {
 }
 
 .divpanel1 .panel1TextLeft {
-  background-image: url(img/storePage/panel1left.jpg);
+  background-image: url(../img/storePage/panel1left.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -465,7 +465,7 @@ body {
 }
 
 .divpanel1 .panel1TextRight {
-  background-image: url(img/storePage/panel1right.jpg);
+  background-image: url(../img/storePage/panel1right.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
@@ -483,7 +483,7 @@ body {
 }
 
 .divpanel2 .panel2 {
-  background-image: url(img/storePage/panelend.jpg);
+  background-image: url(../img/storePage/panelend.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -510,7 +510,7 @@ body {
 }
 
 .divpanelEnd .panelEndTextLeft {
-  background-image: url(img/storePage/panel2left.jpg);
+  background-image: url(../img/storePage/panel2left.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -519,7 +519,7 @@ body {
 }
 
 .divpanelEnd .panelEndTextRight {
-  background-image: url(img/storePage/panel2right.jpg);
+  background-image: url(../img/storePage/panel2right.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;

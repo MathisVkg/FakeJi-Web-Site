@@ -65,7 +65,7 @@ body {
 .bigPaper {
   text-align: center;
   color: white;
-  background-image: url(img/homePage/djibackground.jpg);
+  background-image: url(../img/homePage/djibackground.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 1250px;
@@ -360,7 +360,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .otherSpec {
-  background-image: url(img/homePage/dji_fpv_drone_15.jpg);
+  background-image: url(../img/homePage/dji_fpv_drone_15.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
