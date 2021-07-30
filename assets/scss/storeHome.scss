@@ -1,7 +1,9 @@
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    // background-color: rgb(255, 255, 255);
+    background: rgb(205,205,205);
+    background: linear-gradient(90deg, rgba(218,216,216,1) 0%, rgba(237,237,237,1) 100%);
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
@@ -82,8 +84,68 @@ body {
     }
 }
 
+.bigBackground{
+    background-image: url(../img/storeHomePage/mini2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 390px;
+    .mavicTitle{
+        padding-top: 10%;
+        margin-left: 20%;
+        margin-bottom: 0;
+    }
+    .subText {
+        font-size: 18px;
+        margin-top: 0;
+        margin-left: 20%;
+    }
+}
 
-
+.threeCard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+    .new {
+        color: rgb(238, 108, 61);
+        margin-bottom: 0;
+    }
+    .info1 {
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 35px;
+    }
+    .info2 {
+        font-size: 16px;
+        margin-top: 45px;
+        color: gray;
+    }
+    .priceCard{
+        margin-top: 60px;
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .air2S{
+        background-color: white;
+        // border-radius: 8px;
+        width: 400px;
+        padding: 25px;
+    }
+    .pocket2{
+        background-color: white;
+        // border-radius: 8px;
+        margin-left: 20px;
+        width: 400px;
+        padding: 25px;
+    }
+    .fpvCombo{
+        background-color: white;
+        // border-radius: 8px;
+        margin-left: 20px;
+        width: 400px;
+        padding: 25px;
+    }
+}
 
 
 .footerNav {
@@ -112,7 +174,8 @@ body {
     margin-top: 8%;
     transition: 0.5s ease-in-out;
     &:hover {
-        color: rgb(240, 62, 62);
+        text-decoration: none;
+        color: #4285F4;
         font-size: 18px;
     }
 }

@@ -670,7 +670,8 @@ body {
 }
 
 .colText:hover {
-  color: #f03e3e;
+  color: #4285F4;
+  text-decoration: none;
   font-size: 18px;
 }
 /*# sourceMappingURL=store.css.map */

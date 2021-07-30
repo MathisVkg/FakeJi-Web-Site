@@ -1,5 +1,7 @@
 body {
-  background-color: white;
+  background: #cdcdcd;
+  background: -webkit-gradient(linear, left top, right top, from(#dad8d8), to(#ededed));
+  background: linear-gradient(90deg, #dad8d8 0%, #ededed 100%);
   font-family: 'Lato', sans-serif;
   margin: 0;
 }
@@ -107,6 +109,79 @@ body {
   margin-top: 5px;
 }
 
+.bigBackground {
+  background-image: url(../img/storeHomePage/mini2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 390px;
+}
+
+.bigBackground .mavicTitle {
+  padding-top: 10%;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+.bigBackground .subText {
+  font-size: 18px;
+  margin-top: 0;
+  margin-left: 20%;
+}
+
+.threeCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.threeCard .new {
+  color: #ee6c3d;
+  margin-bottom: 0;
+}
+
+.threeCard .info1 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.threeCard .info2 {
+  font-size: 16px;
+  margin-top: 45px;
+  color: gray;
+}
+
+.threeCard .priceCard {
+  margin-top: 60px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.threeCard .air2S {
+  background-color: white;
+  width: 400px;
+  padding: 25px;
+}
+
+.threeCard .pocket2 {
+  background-color: white;
+  margin-left: 20px;
+  width: 400px;
+  padding: 25px;
+}
+
+.threeCard .fpvCombo {
+  background-color: white;
+  margin-left: 20px;
+  width: 400px;
+  padding: 25px;
+}
+
 .footerNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +221,8 @@ body {
 }
 
 .colText:hover {
-  color: #f03e3e;
+  text-decoration: none;
+  color: #4285F4;
   font-size: 18px;
 }
 /*# sourceMappingURL=storeHome.css.map */

@@ -508,7 +508,8 @@ body {
     margin-top: 8%;
     transition: 0.5s ease-in-out;
     &:hover {
-        color: rgb(240, 62, 62);
+        color: #4285F4;
+        text-decoration: none;
         font-size: 18px;
     }
 }
