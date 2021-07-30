@@ -105,7 +105,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
     .new {
         color: rgb(238, 108, 61);
         margin-bottom: 0;
@@ -114,38 +114,148 @@ body {
         font-size: 13px;
         font-weight: 700;
         margin-top: 35px;
+        padding: 0 15px ;
     }
     .info2 {
         font-size: 16px;
         margin-top: 45px;
         color: gray;
+        padding: 0 15px;
     }
     .priceCard{
         margin-top: 60px;
         font-size: 19px;
         font-weight: 700;
+        padding: 15px;
     }
     .air2S{
         background-color: white;
-        // border-radius: 8px;
         width: 400px;
-        padding: 25px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 12px 12px 20px rgb(177, 177, 177);
+            // transform: translateY(-10px);
+            .air2SHover {
+                display: block;
+                width: 300px;
+                margin-left: 60px;
+            }
+            .backAir2S{
+                display: none;
+            }
+        }
     }
     .pocket2{
         background-color: white;
-        // border-radius: 8px;
         margin-left: 20px;
         width: 400px;
-        padding: 25px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 12px 12px 20px rgb(177, 177, 177);
+            // transform: translateY(-10px);
+            .pocketHover {
+                display: block;
+                width: 300px;
+                margin-left: 50px;
+            }
+            .backPocket{
+                display: none;
+            }
+        }
     }
     .fpvCombo{
         background-color: white;
-        // border-radius: 8px;
         margin-left: 20px;
         width: 400px;
-        padding: 25px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 12px 12px 20px rgb(177, 177, 177);
+            // transform: translateY(-10px);
+            .fpvHover {
+                display: block;
+                width: 385px;
+                margin-left: 20px;
+            }
+            .backFpv{
+                display: none;
+            }
+        }
     }
 }
+
+.fpvHover {
+    display: none;
+}
+.pocketHover {
+    display: none;
+}
+.air2SHover {
+    display: none;
+}
+.backFpv {
+    background-image: url(../img/storeHomePage/fpvcombo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.backPocket {
+    background-image: url(../img/storeHomePage/pocketdji.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.backAir2S {
+    background-image: url(../img/storeHomePage/drone1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.cardTwo {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 10%;
+    .cardLeft {
+        background-image: url(../img/storeHomePage/djicare.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 560px;
+        height: 357px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 12px 12px 20px rgb(177, 177, 177);
+        }
+    }
+    .cardRight {
+        background-image: url(../img/storeHomePage/djicoins.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 560px;
+        height: 357px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 12px 12px 20px rgb(177, 177, 177);
+        }
+    }
+    .cardTitle1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 10%;
+        // padding: 20px;
+    }
+    .cardTitle2 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
 
 
 .footerNav {
