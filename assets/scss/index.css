@@ -10,61 +10,52 @@ body {
 }
 
 .topNav {
+  position: fixed;
+  z-index: 1;
   font-size: 18px;
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
   padding: 25px 15px 20px 15px;
   margin-bottom: 0;
-}
-
-.topNav:hover {
   background-color: white;
+  border-radius: 0 0 8px 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.topNav:hover .buttonNav {
-  color: black;
-}
-
-.topNav:hover .buttonRight {
-  color: black;
-}
-
-.topNav:hover .buttonHome {
-  color: black;
+.burgerMenuDesk {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .buttonNav {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-left: 3%;
-  padding-bottom: 18px;
+  padding: 12px 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .buttonNav:hover {
-  border-bottom: 2px solid black;
+  color: #f03e3e;
 }
 
 .buttonRight {
   float: right;
   margin-right: 3%;
   text-decoration: none;
-  color: white;
-  padding-bottom: 18px;
+  color: black;
+  font-weight: 700;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .buttonRight:hover {
-  border-bottom: 2px solid black;
-}
-
-.buttonHome {
-  text-decoration: none;
-  color: white;
-  margin-left: 3%;
-  padding-bottom: 18px;
-}
-
-.buttonHome:hover {
-  border-bottom: 2px solid black;
+  color: #f03e3e;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .bigPaper {
@@ -557,6 +548,8 @@ input[type=range]:focus::-ms-fill-upper {
     display: none;
   }
   .topNavMedia {
+    position: fixed;
+    z-index: 1;
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -566,13 +559,18 @@ input[type=range]:focus::-ms-fill-upper {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: white;
-    height: 100%;
+    overflow: hidden;
     margin-bottom: 5%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    width: 100%;
   }
   .topNavMedia .burgerMenu {
     width: 20px;
     height: 20px;
     margin: 5% 0 3% 3%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .buttonRight {
     margin-top: 10%;
@@ -580,9 +578,6 @@ input[type=range]:focus::-ms-fill-upper {
     color: black;
   }
   .buttonNav {
-    color: black;
-  }
-  .buttonHome {
     color: black;
   }
   .bigPaper {
