@@ -43,7 +43,7 @@ document.getElementById("unrealVideo").addEventListener("click", () => {
         document.getElementById("test").setAttribute("class", "specGlobal");
         checkClick = 0;
     }
-})
+});
 
 document.getElementById("myRange").addEventListener("click", () => {
     if(slider.value == 0) {
@@ -55,7 +55,7 @@ document.getElementById("myRange").addEventListener("click", () => {
     if(slider.value == 100) {
         document.getElementById("djiConstructId").src = "assets/img/homePage/djiConstruct3.png";
     }
-})
+});
 
 
 function scrollDownOp() {
@@ -103,7 +103,12 @@ document.getElementById("burgerMenu").addEventListener("click", () => {
         document.getElementById("topNavBurger").setAttribute("style", "height: 55px");
         showButton = 0;
     }
-})
+    setTimeout(() => {
+        document.getElementById("burgerMenu").setAttribute("style", "transform: rotate(0deg)");
+        document.getElementById("topNavBurger").setAttribute("style", "height: 55px");
+        showButton = 0;
+    }, 5000);
+});
 
 
 let showButton1 = 0;
@@ -116,4 +121,9 @@ document.getElementById("burgerMenuDesk").addEventListener("click", () => {
         document.getElementById("topNavBurgerDesk").setAttribute("style", "width: 20px; height: 9px;");
         showButton1 = 0;
     }
-})
+    setTimeout(() => {
+        document.getElementById("burgerMenuDesk").setAttribute("style", "transform: rotate(0deg)");
+        document.getElementById("topNavBurgerDesk").setAttribute("style", "width: 20px; height: 9px;");
+        showButton1 = 0;
+    }, 5000);
+});
