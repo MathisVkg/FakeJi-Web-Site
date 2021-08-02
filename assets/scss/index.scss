@@ -6,7 +6,10 @@ body {
     margin: 0;
 }
 
-
+.topNavMedia {
+    display: none;
+    height: 0;
+}
 .topNav {
     font-size: 18px;
     transition: 0.8s ease-in-out;
@@ -327,7 +330,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .fakeJiBuy {
     margin-top: 10%;
-    height: 1300px;
+    padding-bottom: 10%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -395,8 +398,8 @@ input[type=range]:focus::-ms-fill-upper {
     display: flex;
     justify-content: center;
     background: rgb(65,65,65);
+    padding-bottom: 2%;
     // background: rgb(58, 58, 58);
-    height: 400px;
     .colone {
         display: flex;
         flex-direction: column;
@@ -420,5 +423,121 @@ input[type=range]:focus::-ms-fill-upper {
     &:hover {
         color: rgb(240, 62, 62);
         font-size: 18px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .topNav {
+        display: none;
+    }
+    .topNavMedia {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        margin-bottom: 5%;
+        .burgerMenu {
+            width: 20px;
+            height: 20px;
+            margin: 5% 0 3% 3%;
+        }
+    }
+    .buttonRight {
+        margin-top: 10%;
+        margin-left: 3%;
+        color: black;
+    }
+    .buttonNav {
+        color: black;
+    }
+    .buttonHome {
+        color: black;
+    }
+    .bigPaper {
+        font-size: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 700px;
+        .paperAppear {
+            font-size: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .elementDrone {
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 500px;
+    }
+    .droneContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerFlex {
+        flex-direction: column;
+        height: 780px;
+        .droneTextClass {
+            width: auto;
+            font-size: 20px;
+            margin-right: 0;
+            text-align: center;
+            padding: 15px;
+        }
+        .imgContainer {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    .specGlobal{
+        flex-direction: column;
+        margin-bottom: 20%;
+        .spec {
+            text-align: center;
+        }
+        .clicMe {
+            display: none;
+        }
+    }
+    .airFlow {
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 1000px;
+    }
+    .otherSpec {
+        flex-direction: column;
+        background-image: unset;
+        align-items: center;
+        .specTwo {
+            margin-left: 0;
+        }
+        .specThree {
+            margin-left: 0;
+        }
+        .subText {
+            margin: 0;
+        }
+    }
+    .fakeJiBuy {
+        .boxInfo {
+            flex-direction: column;
+            width: 330px;
+        }
+        .legalInfo {
+            text-align: center;
+        }
+    }
+    .footerNav {
+        flex-direction: column;
+        .hrFooter {
+            display: none;
+        }
+        .colTextTitle {
+            margin-bottom: 0;
+        }
     }
 }

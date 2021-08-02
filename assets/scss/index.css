@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+.topNavMedia {
+  display: none;
+  height: 0;
+}
+
 .topNav {
   font-size: 18px;
   -webkit-transition: 0.8s ease-in-out;
@@ -410,7 +415,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .fakeJiBuy {
   margin-top: 10%;
-  height: 1300px;
+  padding-bottom: 10%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +516,7 @@ input[type=range]:focus::-ms-fill-upper {
       -ms-flex-pack: center;
           justify-content: center;
   background: #414141;
-  height: 400px;
+  padding-bottom: 2%;
 }
 
 .footerNav .colone {
@@ -545,5 +550,146 @@ input[type=range]:focus::-ms-fill-upper {
 .colText:hover {
   color: #f03e3e;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .topNav {
+    display: none;
+  }
+  .topNavMedia {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    height: 100%;
+    margin-bottom: 5%;
+  }
+  .topNavMedia .burgerMenu {
+    width: 20px;
+    height: 20px;
+    margin: 5% 0 3% 3%;
+  }
+  .buttonRight {
+    margin-top: 10%;
+    margin-left: 3%;
+    color: black;
+  }
+  .buttonNav {
+    color: black;
+  }
+  .buttonHome {
+    color: black;
+  }
+  .bigPaper {
+    font-size: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 700px;
+  }
+  .bigPaper .paperAppear {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .elementDrone {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 500px;
+  }
+  .droneContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 780px;
+  }
+  .containerFlex .droneTextClass {
+    width: auto;
+    font-size: 20px;
+    margin-right: 0;
+    text-align: center;
+    padding: 15px;
+  }
+  .containerFlex .imgContainer {
+    width: 350px;
+    height: 350px;
+  }
+  .specGlobal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20%;
+  }
+  .specGlobal .spec {
+    text-align: center;
+  }
+  .specGlobal .clicMe {
+    display: none;
+  }
+  .airFlow {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 1000px;
+  }
+  .otherSpec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .otherSpec .specTwo {
+    margin-left: 0;
+  }
+  .otherSpec .specThree {
+    margin-left: 0;
+  }
+  .otherSpec .subText {
+    margin: 0;
+  }
+  .fakeJiBuy .boxInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 330px;
+  }
+  .fakeJiBuy .legalInfo {
+    text-align: center;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerNav .hrFooter {
+    display: none;
+  }
+  .footerNav .colTextTitle {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

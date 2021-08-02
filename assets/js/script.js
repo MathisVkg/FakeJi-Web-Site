@@ -91,3 +91,26 @@ function scrollUpRotate() {
     document.getElementById("gogglesRotate").setAttribute("style", "transform: rotate(" + rotateDrone + "deg)");
     document.getElementById("controlerRotate").setAttribute("style", "transform: rotate(" + rotateDrone + "deg)");
 }
+
+
+let showButton = 0;
+document.getElementById("burgerMenu").addEventListener("click", () => {
+    showButton++;
+    document.getElementById("showButton1").removeAttribute("style");
+    document.getElementById("showButton2").removeAttribute("style");
+    document.getElementById("showButton3").removeAttribute("style");
+    document.getElementById("showButton4").removeAttribute("style");
+    document.getElementById("showButton5").removeAttribute("style");
+    document.getElementById("showButton6").removeAttribute("style");
+    document.getElementById("showButton7").removeAttribute("style");
+    if(showButton === 2 ) {
+        document.getElementById("showButton1").setAttribute("style", "display: none;");
+        document.getElementById("showButton2").setAttribute("style", "display: none;");
+        document.getElementById("showButton3").setAttribute("style", "display: none;");
+        document.getElementById("showButton4").setAttribute("style", "display: none;");
+        document.getElementById("showButton5").setAttribute("style", "display: none;");
+        document.getElementById("showButton6").setAttribute("style", "display: none;");
+        document.getElementById("showButton7").setAttribute("style", "display: none;");
+        showButton = 0;
+    }
+})
