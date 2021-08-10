@@ -59,6 +59,7 @@ body {
 .productNav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 80px;
     margin-bottom: 20px;
     .productGroup {
