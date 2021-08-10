@@ -112,11 +112,11 @@ body {
     .containerFlex {
         display: flex;
         justify-content: center;
-        height: 600px;
+        height: 400px;
     }
     .droneTextClass {
         margin-top: 5%;
-        margin-right: 10%;
+        // margin-right: 10%;
         font-size: 35px;
         width: 535px;
     }
@@ -126,8 +126,8 @@ body {
         transition: 0.5s ease-in-out;
     }
     .imgContainer {
-        width: 850px;
-        height: 500px;
+        width: auto;
+        height: 390px;
     }
 }
 
@@ -470,6 +470,7 @@ input[type=range]:focus::-ms-fill-upper {
     .droneContainer{
         flex-direction: column;
         align-items: center;
+        margin-top: 60px;
     }
     .containerFlex {
         flex-direction: column;
@@ -482,8 +483,9 @@ input[type=range]:focus::-ms-fill-upper {
             padding: 15px;
         }
         .imgContainer {
-            width: 350px;
-            height: 350px;
+            width: auto;
+            height: 270px;
+            margin-bottom: 65px;
         }
     }
     .specGlobal{
@@ -491,6 +493,7 @@ input[type=range]:focus::-ms-fill-upper {
         margin-bottom: 20%;
         .spec {
             text-align: center;
+            margin: 15px;
         }
         .clicMe {
             display: none;

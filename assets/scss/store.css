@@ -4,61 +4,60 @@ body {
   margin: 0;
 }
 
+.topNavMedia {
+  display: none;
+  height: 0;
+}
+
 .topNav {
-  font-size: 16px;
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
-  padding: 25px 15px 20px 15px;
+  position: fixed;
+  z-index: 1;
+  font-size: 18px;
+  padding: 15px 35px 30px 15px;
   margin-bottom: 0;
-  text-align: center;
-  border-bottom: 1.5px solid gray;
-  background-color: black;
-  text-decoration: none;
+  background-color: #e4e4e4;
+  border-radius: 0 0 8px 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.burgerMenuDesk {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .buttonNav {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-left: 3%;
-  padding-bottom: 18px;
+  padding: 12px 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .buttonNav:hover {
   color: #4285F4;
-  border-bottom: 2px solid white;
   text-decoration: none;
 }
 
 .buttonRight {
-  margin-left: 8%;
+  float: right;
+  margin-right: 3%;
   text-decoration: none;
-  color: white;
-  padding-bottom: 18px;
+  color: black;
+  font-weight: 700;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .buttonRight:hover {
   color: #4285F4;
-  border-bottom: 2px solid white;
   text-decoration: none;
-}
-
-.buttonHome {
-  text-decoration: none;
-  color: white;
-  margin-left: 3%;
-  padding-bottom: 18px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.buttonHome:hover {
-  color: #4285F4;
-  border-bottom: 2px solid white;
-  text-decoration: none;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .setElement {
@@ -72,7 +71,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -569,7 +567,7 @@ body {
 }
 
 .faq .question:hover {
-  font-size: 22px;
+  font-size: 20.5px;
   color: #4285F4;
 }
 
@@ -673,5 +671,125 @@ body {
   color: #4285F4;
   text-decoration: none;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .topNav {
+    display: none;
+  }
+  .topNavMedia {
+    position: fixed;
+    z-index: 1;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #e4e4e4;
+    overflow: hidden;
+    margin-bottom: 5%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+  }
+  .topNavMedia .burgerMenu {
+    width: 20px;
+    height: 20px;
+    margin: 5% 0 3% 3%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .buttonRight {
+    margin-top: 10%;
+    margin-left: 3%;
+    color: black;
+  }
+  .carrouselClass {
+    width: auto;
+    height: 520px;
+  }
+  .infoProduct {
+    margin-top: 12%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoProduct .checkBox {
+    margin-top: 10%;
+    margin: 4%;
+  }
+  .divpanel1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .divpanel1 .panel1TextLeft {
+    height: 245px;
+  }
+  .divpanel1 .panel1TextRight {
+    height: 245px;
+  }
+  .divpanel2 {
+    height: 210px;
+  }
+  .divpanel2 .panel2 {
+    background-size: contain;
+  }
+  .divpanelEnd {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .divpanelEnd .panelEndTextLeft {
+    height: 550px;
+  }
+  .divpanelEnd .panelEndTextRight {
+    height: 530px;
+  }
+  .faq {
+    margin: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .faq .subQuestion {
+    width: 440px;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+    margin-top: 15%;
+  }
+  .footerNav .colText {
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  hr {
+    display: none;
+  }
+  .botNavBar .botNavButton {
+    margin-right: 3.5%;
+  }
+  .botNavBar .infoNav {
+    margin-left: 3.5%;
+  }
 }
 /*# sourceMappingURL=store.css.map */

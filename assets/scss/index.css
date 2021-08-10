@@ -143,12 +143,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 600px;
+  height: 400px;
 }
 
 .droneContainer .droneTextClass {
   margin-top: 5%;
-  margin-right: 10%;
   font-size: 35px;
   width: 535px;
 }
@@ -161,8 +160,8 @@ body {
 }
 
 .droneContainer .imgContainer {
-  width: 850px;
-  height: 500px;
+  width: auto;
+  height: 390px;
 }
 
 input[type=range] {
@@ -605,6 +604,7 @@ input[type=range]:focus::-ms-fill-upper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 60px;
   }
   .containerFlex {
     -webkit-box-orient: vertical;
@@ -621,8 +621,9 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 15px;
   }
   .containerFlex .imgContainer {
-    width: 350px;
-    height: 350px;
+    width: auto;
+    height: 270px;
+    margin-bottom: 65px;
   }
   .specGlobal {
     -webkit-box-orient: vertical;
@@ -633,6 +634,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
   .specGlobal .spec {
     text-align: center;
+    margin: 15px;
   }
   .specGlobal .clicMe {
     display: none;

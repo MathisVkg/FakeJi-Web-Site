@@ -6,60 +6,59 @@ body {
     margin: 0;
 }
 
+.topNavMedia {
+    display: none;
+    height: 0;
+}
 .topNav {
-    font-size: 16px;
-    transition: 0.8s ease-in-out;
-    padding: 25px 15px 20px 15px;
+    position: fixed;
+    z-index: 1;
+    font-size: 18px;
+    padding: 15px 35px 30px 15px;
     margin-bottom: 0;
-    text-align: center;
-    border-bottom: 1.5px solid gray;
-    background-color: black;
-    text-decoration: none;
+    background-color: #e4e4e4;
+    border-radius: 0 0 8px 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.burgerMenuDesk {
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .buttonNav {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 3%;
-    padding-bottom: 18px;
+    padding: 12px 0;
     transition: 0.5s ease-in-out;
     &:hover {
-        color:  #4285F4;
-        border-bottom: 2px solid rgb(255, 255, 255);
+        color: #4285F4;
         text-decoration: none;
+    }
+}
+.buttonRight {
+    float: right;
+    margin-right: 3%;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        color: #4285F4;
+        text-decoration: none;
+        transform: translateY(-6px);
     }
 }
 
-.buttonRight {
-    margin-left: 8%;
-    text-decoration: none;
-    color: white;
-    padding-bottom: 18px;
-    transition: 0.5s ease-in-out;
-    &:hover {
-        color:  #4285F4;
-        border-bottom: 2px solid rgb(255, 255, 255);
-        text-decoration: none;
-    }
-}
-.buttonHome {
-    text-decoration: none;
-    color: white;
-    margin-left: 3%;
-    padding-bottom: 18px;
-    transition: 0.5s ease-in-out;
-    &:hover {
-        color:  #4285F4;
-        border-bottom: 2px solid rgb(255, 255, 255);
-        text-decoration: none;
-    }
-}
 
 .setElement {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    // margin-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -428,7 +427,7 @@ body {
         margin-top: 15px;
         transition: 0.5s ease-in-out;
         &:hover {
-            font-size: 22px;
+            font-size: 20.5px;
             color: #4285F4;
         }
     }
@@ -514,3 +513,101 @@ body {
     }
 }
 
+
+
+
+@media only screen and (max-width: 600px) {
+    .topNav {
+        display: none;
+    }
+    .topNavMedia {
+        position: fixed;
+        z-index: 1;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        background-color: #e4e4e4;
+        overflow: hidden;
+        margin-bottom: 5%;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        .burgerMenu {
+            width: 20px;
+            height: 20px;
+            margin: 5% 0 3% 3%;
+            transition: 0.5s ease-in-out;
+        }
+    }
+    .buttonRight {
+        margin-top: 10%;
+        margin-left: 3%;
+        color: black;
+    }
+    .carrouselClass {
+        width: auto;
+        height: 520px;
+    }
+    .infoProduct {
+        margin-top: 12%;
+        align-items: center;
+        flex-direction: column;
+        .checkBox {
+            margin-top: 10%;
+            // margin-left: 0;
+            margin: 4%;
+        }
+    }
+    .divpanel1 {
+        flex-direction: column;
+        align-items: center;
+        .panel1TextLeft {
+            height: 245px;
+        }
+        .panel1TextRight {
+            height: 245px;
+        }
+    }
+    .divpanel2 {
+        height: 210px;
+        .panel2 {
+            background-size: contain;
+        }
+    }
+    .divpanelEnd {
+        align-items: center;
+        flex-direction: column;
+        .panelEndTextLeft {
+            height: 550px;
+        }
+        .panelEndTextRight {
+            height: 530px;
+        }
+    }
+    .faq {
+        margin: 20px;
+        align-items: flex-start;
+        .subQuestion {
+            width: 440px;
+        }
+    }
+    .footerNav {
+        flex-direction: column;
+        height: unset;
+        margin-top: 15%;
+        .colText {
+            margin-bottom: 5%;
+            margin-top: 2%;
+        }
+    }
+    hr {
+        display: none;
+    }
+    .botNavBar {
+        .botNavButton {
+            margin-right: 3.5%;
+        }
+        .infoNav {
+            margin-left: 3.5%;
+        }
+    }
+}
