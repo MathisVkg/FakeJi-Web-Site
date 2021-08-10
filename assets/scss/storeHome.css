@@ -6,61 +6,60 @@ body {
   margin: 0;
 }
 
+.topNavMedia {
+  display: none;
+  height: 0;
+}
+
 .topNav {
-  font-size: 16px;
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
-  padding: 25px 15px 20px 15px;
+  position: fixed;
+  z-index: 1;
+  font-size: 18px;
+  padding: 15px 15px 20px 15px;
   margin-bottom: 0;
-  text-align: center;
-  border-bottom: 1.5px solid gray;
-  background-color: black;
-  text-decoration: none;
+  background-color: #e4e4e4;
+  border-radius: 0 0 8px 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.burgerMenuDesk {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .buttonNav {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-left: 3%;
-  padding-bottom: 18px;
+  padding: 12px 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .buttonNav:hover {
   color: #4285F4;
-  border-bottom: 2px solid white;
   text-decoration: none;
 }
 
 .buttonRight {
-  margin-left: 8%;
+  float: right;
+  margin-right: 3%;
   text-decoration: none;
-  color: white;
-  padding-bottom: 18px;
+  color: black;
+  font-weight: 700;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .buttonRight:hover {
   color: #4285F4;
-  border-bottom: 2px solid white;
   text-decoration: none;
-}
-
-.buttonHome {
-  text-decoration: none;
-  color: white;
-  margin-left: 3%;
-  padding-bottom: 18px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.buttonHome:hover {
-  color: #4285F4;
-  border-bottom: 2px solid white;
-  text-decoration: none;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .productNav {
@@ -70,7 +69,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  padding-top: 80px;
   margin-bottom: 20px;
 }
 
@@ -365,5 +364,99 @@ body {
   text-decoration: none;
   color: #4285F4;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .topNav {
+    display: none;
+  }
+  .topNavMedia {
+    position: fixed;
+    z-index: 1;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #e4e4e4;
+    overflow: hidden;
+    margin-bottom: 5%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+  }
+  .topNavMedia .burgerMenu {
+    width: 20px;
+    height: 20px;
+    margin: 5% 0 3% 3%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .buttonRight {
+    margin-top: 10%;
+    margin-left: 3%;
+    color: black;
+  }
+  .productNav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .threeCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .threeCard .air2S {
+    margin-bottom: 15px;
+  }
+  .threeCard .pocket2 {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .threeCard .fpvCombo {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .cardTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardTwo .cardLeft {
+    width: auto;
+    margin: unset;
+    margin-bottom: 15px;
+    height: 260px;
+  }
+  .cardTwo .cardRight {
+    width: auto;
+    height: 225px;
+    margin: unset;
+  }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+  }
+  hr {
+    display: none;
+  }
 }
 /*# sourceMappingURL=storeHome.css.map */

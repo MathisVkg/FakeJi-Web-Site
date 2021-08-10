@@ -164,7 +164,7 @@ document.getElementById("burgerMenuDesk").addEventListener("click", () => {
 let showButton = 0;
 document.getElementById("burgerMenu").addEventListener("click", () => {
     showButton++;
-    document.getElementById("topNavBurger").setAttribute("style", "height: 430px");
+    document.getElementById("topNavBurger").setAttribute("style", "height: 345px");
     document.getElementById("burgerMenu").setAttribute("style", "transform: rotate(90deg)");
     if(showButton === 2 ) {
         document.getElementById("burgerMenu").setAttribute("style", "transform: rotate(0deg)");
