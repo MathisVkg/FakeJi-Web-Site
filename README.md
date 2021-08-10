@@ -19,7 +19,7 @@ You can see the project with this link to the github page.
 I didn't start with the main page because the page on the fpv part inspired me more. Each addition to my site was done in three steps: 
 - first I explored the original site and took the most interesting parts.
 - I was thinking about the construction of the chosen part and how to implement it.
-- And for finish i fix all detail and bug and check if the web site still responsive.
+- And for finish I fix all detail and bug and check if the web site still responsive.
 
 I then added some page that interested me the most.This is an exquisite first and I intend to add more pages in the future, until I get to the full site in the future.
 
