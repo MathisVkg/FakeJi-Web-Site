@@ -9,7 +9,7 @@ I choose this web site I chose this website because I really like the brand and 
 - **Project:** Website presenting a fake version of DJi web site chain called "FakeJi".
 - **Structure of website:** Multi-page responsive website. Each page present one thing.
 
-## Voir le project
+## Project
 You can see the project with this link to the github page.
 - <a href="https://mathisvkg.github.io/FakeJi-Web-Site/" target="_blank">FakeJi Web Site</a>
 
