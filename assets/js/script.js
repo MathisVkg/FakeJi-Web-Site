@@ -34,11 +34,11 @@ window.addEventListener("scroll", function(){
 
 document.getElementById("unrealVideo").addEventListener("click", () => {
     checkClick++;
-    document.getElementById("unrealVideo").setAttribute("width", "165%");
+    document.getElementById("unrealVideo").setAttribute("width", "900");
     document.getElementById("test").removeAttribute("class");
     document.getElementById("test").setAttribute("class", "specGlobal2");
     if(checkClick === 2) {
-        document.getElementById("unrealVideo").setAttribute("width", "90%");
+        document.getElementById("unrealVideo").setAttribute("width", "600");
         document.getElementById("test").removeAttribute("class");
         document.getElementById("test").setAttribute("class", "specGlobal");
         checkClick = 0;

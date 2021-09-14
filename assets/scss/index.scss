@@ -225,6 +225,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 20px;
     .spec {
         color: white;
+        margin-left: 2%;
     }
     .videoUnreal {
         color: white;
@@ -234,9 +235,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .specGlobal2 {
     margin-bottom: 10%;
+    margin-left: 2%;
     font-size: 20px;
     display: flex;
     justify-content: center;
+    .spec {
+        margin-left: 2%;
+    }
 }
 
 .class4k60fps {

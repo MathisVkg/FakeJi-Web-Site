@@ -279,6 +279,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .specGlobal .spec {
   color: white;
+  margin-left: 2%;
 }
 
 .specGlobal .videoUnreal {
@@ -288,6 +289,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .specGlobal2 {
   margin-bottom: 10%;
+  margin-left: 2%;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,6 +297,10 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.specGlobal2 .spec {
+  margin-left: 2%;
 }
 
 .class4k60fps {
