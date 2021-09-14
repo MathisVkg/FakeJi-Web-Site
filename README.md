@@ -3,7 +3,7 @@
 ![forthebadge](https://forthebadge.com/images/badges/uses-html.svg) ![forthebadge](https://forthebadge.com/images/badges/uses-css.svg) ![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
 
 This is my personnal web site inpisred by Dji. Trying to reproduce most faithfully the real site but by changing some part by my own appreciations.
-I choose this web site I chose this website because I really like the brand and it's a good reference site, well built.
+I chose this website because I really like the brand and it's a good reference site, well built.
 
 
 - **Project:** Website presenting a fake version of DJi web site chain called "FakeJi".
