@@ -10,11 +10,6 @@ document.getElementById("burgerMenuDesk").addEventListener("click", () => {
         document.getElementById("topNavBurgerDesk").setAttribute("style", "width: 20px; height: 9px;");
         showButton1 = 0;
     }
-    setTimeout(() => {
-        document.getElementById("burgerMenuDesk").setAttribute("style", "transform: rotate(0deg)");
-        document.getElementById("topNavBurgerDesk").setAttribute("style", "width: 20px; height: 9px;");
-        showButton1 = 0;
-    }, 5000);
 });
 
 let showButton = 0;
@@ -27,9 +22,4 @@ document.getElementById("burgerMenu").addEventListener("click", () => {
         document.getElementById("topNavBurger").setAttribute("style", "height: 55px");
         showButton = 0;
     }
-    setTimeout(() => {
-        document.getElementById("burgerMenu").setAttribute("style", "transform: rotate(0deg)");
-        document.getElementById("topNavBurger").setAttribute("style", "height: 55px");
-        showButton = 0;
-    }, 5000);
 });
