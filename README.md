@@ -8,6 +8,7 @@ I chose this website because I really like the brand and it's a good reference s
 
 - **Project:** Website presenting a fake version of DJi web site chain called "FakeJi".
 - **Structure of website:** Multi-page responsive website. Each page present one thing.
+                            -accessible pages: home page, store and purchase page.
 
 ## Project
 You can see the project with this link to the github page.
